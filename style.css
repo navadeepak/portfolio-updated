@@ -405,4 +405,9 @@ body{
         border-radius: 50%;
         transition: .5s;
     }
+    .linkedin:hover,.github:hover{
+    border: 1px solid var(--img-bod-and-fill-but);
+    animation: none;
+    cursor: pointer;
+    transition: .5s;
 }

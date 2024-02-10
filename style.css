@@ -27,8 +27,9 @@
     margin: 0;
     font-family: var(--casual);
     transition: 1s;
+    overflow-x: hidden;
 }
-#body{
+body{
     height: 100vh;
     width: 100vw;
     background-color: var(--bg-light);
@@ -50,6 +51,7 @@
     border-bottom: 2px solid transparent;
     color: var(--light-for-txt);
     font-weight: 600;
+    width: fit-content;
 }
 .mob-no:hover{
     border-bottom: 2px solid royalblue;
@@ -63,6 +65,7 @@
     border-bottom: 2px solid transparent;
     color: var(--light-for-txt);
     font-weight: 600;
+    width: fit-content;
 }
 .mail:hover{
     border-bottom: 2px solid royalblue;
@@ -81,6 +84,7 @@
     border-bottom: 2px solid transparent;
     color: var(--light-for-txt);
     font-weight: 600;
+    width: fit-content;
 }
 .whatsapp:hover{
     border-bottom: 2px solid royalblue;
@@ -255,7 +259,150 @@
     color: var(--light);
     cursor:text;
 }
-.org-mail::selection,.org-mobile::selection{
-    background-color: yellow;
-    color: black;
+
+@media only screen and (max-width:900px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    .top-nav{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .port-title{
+        position: absolute;
+        left: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 600;
+        border-bottom: 2px solid royalblue;
+    }
+    .whatsapp{
+        font-size: 10px;
+        position: absolute;
+        left: 46vw;
+        transition: 0s;
+        border-bottom: 2px solid transparent;
+        color: var(--light-for-txt);
+        font-weight: 600;
+    }
+    .mail{
+        font-size: 10px;
+        position: absolute;
+        left: 66vw;
+        transition: 0s;
+        border-bottom: 2px solid transparent;
+        color: var(--light-for-txt);
+        font-weight: 600;
+    }
+    .mob-no{
+        font-size: 10px;
+        position: absolute;
+        left: 78vw;
+        transition: 1s;
+        border-bottom: 2px solid transparent;
+        color: var(--light-for-txt);
+        font-weight: 600;
+    }
+    .profile-img{
+        width: 80vw;
+        height: 35vh;
+        border-radius: 5px;
+        position: relative;
+        left: 0;
+        top: 5vh;
+        border-bottom: 5px solid var(--light-for-txt) !important;
+        filter: drop-shadow(0px 0px 30px rgba(66, 66, 66, 0.52));
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .name{
+        
+        left: 5vw;
+        font-size: 38px;
+        top: 60vh;
+        color: var(--light-for-txt);
+        text-shadow: 2px 2px 5px var(--light-for-txt);
+    }
+    .intrest{
+        
+        left: 5vw;
+        top: 72vh;
+        font-size: 20px;
+        color: var(--light-for-sub-txt);
+    }
+    .resume{
+        left: 5vw;
+        top: 82vh;
+        width: 20vw;
+        height: 3vh;
+        border: 1px solid black;
+        background-color: royalblue;
+        color: var(--light);
+        border-radius: 3px;
+        border-color: royalblue;
+        cursor: pointer;
+    }
+    .theme{
+        position: absolute;
+        left: 5vw;
+        top: 90vh;
+        width: 90vw;
+        height: 3vh;
+        border-radius: 3px;
+        color: var(--light);
+        background-color: var(--light-for-txt);
+        cursor: pointer;
+        border: none;
+    }
+    .links{
+        width: 40vw;
+        height: 5vh;
+        left: 30vw;
+        top: 81vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    .linkedin-out{
+        width: 40vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .github-out{
+        width: 40vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkedin,.github{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 7vw;
+        height: 3vh;
+        border: 1px solid royalblue;
+        padding: 5%;
+        border-radius: 50%;
+        transition: .5s;
+    }
 }

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --light:white;
+    --dark:black;
+    --bg-dark:rgb(37, 49, 55);
+    --bg-light:rgb(237, 240, 242);
+    --side-title-font:'Titillium Web', sans-serif;
+    --title-font: 'Teko', sans-serif;
+    --casual: 'Quicksand', sans-serif;
+    --stylish-font:'Dancing Script', cursive;
+    --small-text-fonts: 'Gowun Dodum', sans-serif;
+    --popins-font:'Poppins', sans-serif;
+    --light-for-txt:rgb(37, 49, 55);
+    --light-for-sub-txt:rgb(56, 71, 79);
+    --dark-for-txt:rgb(237, 240, 242);
+    --dark-for-sub-txt:rgb(237, 240, 242);
+    --img-bod-and-fill-but:royalblue;
+}
+*{
+    cursor: default;
+    padding: 0;
+    margin: 0;
+    font-family: var(--casual);
+    transition: 1s;
+}
+#body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+}
+.top-nav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mob-no{
+    font-size: 15px;
+    position: absolute;
+    right: 5vw;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+    color: var(--light-for-txt);
+    font-weight: 600;
+}
+.mob-no:hover{
+    border-bottom: 2px solid royalblue;
+    transition: .5s ease;
+}
+.mail{
+    font-size: 15px;
+    position: absolute;
+    right: 15vw;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+    color: var(--light-for-txt);
+    font-weight: 600;
+}
+.mail:hover{
+    border-bottom: 2px solid royalblue;
+    transition: .5s ease;
+}
+.mob-no a,.mail a,.whatsapp a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--light-for-txt);
+}
+.whatsapp{
+    font-size: 15px;
+    position: absolute;
+    right: 24vw;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+    color: var(--light-for-txt);
+    font-weight: 600;
+}
+.whatsapp:hover{
+    border-bottom: 2px solid royalblue;
+    transition: .5s ease;
+}
+.container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.profile-img{
+    width: 30vw;
+    height: 65vh;
+    border-radius: 5px;
+    position: relative;
+    left: 5vw;
+    top: 8vh;
+    border-bottom: 5px solid var(--light-for-txt) !important;
+    filter: drop-shadow(0px 0px 30px rgba(66, 66, 66, 0.52));
+}
+.name{
+    position: absolute;
+    left: 40vw;
+    font-size: 60px;
+    top: 30vh;
+    color: var(--light-for-txt);
+    text-shadow: 2px 2px 5px var(--light-for-txt);
+}
+.intrest{
+    position: absolute;
+    left: 40vw;
+    top: 45vh;
+    font-size: 30px;
+    color: var(--light-for-sub-txt);
+}
+.resume{
+    position: absolute;
+    left: 40vw;
+    top: 57vh;
+    width: 8vw;
+    height: 5vh;
+    border: 1px solid black;
+    background-color: royalblue;
+    color: var(--light);
+    border-radius: 3px;
+    border-color: royalblue;
+    cursor: pointer;
+}
+.linkedin:hover,.github:hover{
+    border: 1px solid var(--img-bod-and-fill-but);
+    animation: bubble 1s infinite;
+    cursor: pointer;
+    transition: .5s;
+}
+.linkedin,.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 6vh;
+    border: 1px solid royalblue;
+    padding: 5%;
+    border-radius: 50%;
+    transition: .5s;
+}
+@keyframes bubble{
+    0%{
+        padding: 5%;
+    }
+    50%{
+        padding: 10%;
+    }
+    100%{
+        padding: 5%;
+
+    }
+}
+.theme{
+    position: absolute;
+    left: 5vw;
+    bottom: 7.5vh;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 3px;
+    color: var(--light);
+    background-color: var(--light-for-txt);
+    cursor: pointer;
+    border: none;
+}
+.links{
+    width: 10vw;
+    height: 50vh;
+    right: 1.5vw;
+    top: 25vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.linkedin-out{
+    width: 10vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.github-out{
+    width: 10vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#alter-mail{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#alter-mobile{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.close{
+    background-color: tomato;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.alter{
+    display:flex;
+    width: 25vw;
+    height: 30vh;
+    border: 2px solid royalblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var(--bg-light);
+}
+.port-title{
+    position: absolute;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 2px solid royalblue;
+}
+.light{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.dark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-mail,.title-mobile{
+    border-bottom: 2px solid royalblue;
+    color: var(--light-for-txt);
+}
+.org-mail,.org-mobile{
+    background-color: royalblue;
+    color: var(--light);
+    cursor:text;
+}
+.org-mail::selection,.org-mobile::selection{
+    background-color: yellow;
+    color: black;
+}
